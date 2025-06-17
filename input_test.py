@@ -1,10 +1,20 @@
-import pynput
+from pynput import keyboard
 from pynput.mouse import Listener
 from pynput.mouse import  Button
 
+'''
+# test mouse click input
 def on_click(x, y, button, pressed):
     if button == Button.left:
         print("Mouse clicked")   
 
-with Listener(on_click=on_click) as listener:
-    listener.join()
+with Listener(on_click=on_click) as mouse_listener:
+    mouse_listener.join()
+'''
+ 
+# test keyboard button input
+def on_press(key):
+    print('key {0} pressed'.format(key.char))
+    
+with keyboard.Listener(on_press=on_press) as keyboard_listener:
+    keyboard_listener.join()
