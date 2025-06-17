@@ -10,4 +10,4 @@
 
 ### Done ✓
 
-- [x] Fix input bug
+- [x] Fix mouse input doesn't work
