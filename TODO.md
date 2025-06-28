@@ -6,8 +6,9 @@
 
 ### In Progress
 
-- [ ] Find a way to stop current mouse listener
+- [ ] Fix mouse listener not stopping
 
 ### Done ✓
 
 - [x] Fix input bug
+- [x] Find a way to stop the script
