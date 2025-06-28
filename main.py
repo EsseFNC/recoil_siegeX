@@ -28,7 +28,7 @@ def on_press(key):
             can_listen_mouse = False
         else:
             mouse_listener.stop()
-            print("o i i a i")
+            print("o i i a i") # DEBUG
             can_listen_mouse = True
     if key == keyboard.Key.esc: # exit program
         print("got ESC. Exiting program")
