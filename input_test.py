@@ -2,6 +2,7 @@ from pynput import keyboard
 from pynput.mouse import Listener
 from pynput.mouse import  Button
 
+'''
 # test mouse click input
 def on_click(x, y, button, pressed):
     while pressed:
@@ -14,6 +15,7 @@ def on_click(x, y, button, pressed):
 
 with Listener(on_click=on_click) as mouse_listener:
     mouse_listener.join()
+'''
 
 '''
 global_bool = True
