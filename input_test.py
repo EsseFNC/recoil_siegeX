@@ -2,16 +2,20 @@ from pynput import keyboard
 from pynput.mouse import Listener
 from pynput.mouse import  Button
 
-'''
 # test mouse click input
 def on_click(x, y, button, pressed):
-    if button == Button.left:
-        print("Mouse clicked")   
+    while pressed:
+        if button == Button.left:
+            print("Mouse left clicked")
+            
+        if button == Button.right:
+            print("Mouse right clicked")  
+            return False # exiting the code
 
 with Listener(on_click=on_click) as mouse_listener:
     mouse_listener.join()
-'''
 
+'''
 global_bool = True
  
 # test keyboard button input
@@ -25,3 +29,4 @@ with keyboard.Listener(on_press=on_press) as keyboard_listener:
     
 if __name__ == "__main__":
     print(global_bool)
+'''
