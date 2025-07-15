@@ -9,18 +9,10 @@ import pyautogui
 can_listen_mouse = True
 
 def on_click(x, y, button, pressed):
-    global can_listen_mouse
-    
-    if button == Button.left:
-        pyautogui.move(0, 10)
+    if button == Button.left and pressed:
+        pyautogui.move(0, 5, duration=.01)
         
     return False if can_listen_mouse else True
-        
-'''
-def on_press(x, y, button, pressed):
-    if button == Button.left:
-        pyautogui.move(0, 10)
-'''
      
 def on_press(key):
     global can_listen_mouse
