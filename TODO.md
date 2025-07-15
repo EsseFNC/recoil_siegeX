@@ -6,7 +6,7 @@
 
 ### In Progress
 
-- [ ] Run mouse listener on_click function code continously until the mouse is released without crashing the program
+- [ ] Undestand how to create a while loop that breaks when Button.left is not pressed
 
 ### Done ✓
 
