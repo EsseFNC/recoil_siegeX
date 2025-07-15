@@ -9,8 +9,15 @@ import pyautogui
 can_listen_mouse = True
 
 def on_click(x, y, button, pressed):
-    if button == Button.left and pressed:
-        pyautogui.move(0, 5, duration=.01)
+    
+    while True:
+        if button == Button.left:
+            pyautogui.move(0, 5, duration=.01)
+        else:
+            pressed = False
+            
+        if not pressed:
+            break
         
     return False if can_listen_mouse else True
      
